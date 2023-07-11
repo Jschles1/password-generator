@@ -112,7 +112,7 @@ export default function Home() {
           Password Generator
         </h1>
 
-        <div className="flex p-4 items-center justify-between bg-dark-gray mb-4 md:py-[1.188rem] md:px-8 md:mb-6">
+        <div className="flex p-4 items-center justify-between bg-dark-gray mb-4 md:py-[1.188rem] md:px-8 md:mb-6 lg:h-[80px]">
           <div className="max-w-[60%] md:max-w-[75%]">
             <p
               className={cn(
