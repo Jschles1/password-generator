@@ -20,7 +20,10 @@ const Slider = React.forwardRef<
     <SliderPrimitive.Track className="relative h-2 w-full grow overflow-hidden bg-slate">
       <SliderPrimitive.Range className="absolute h-full bg-lime" />
     </SliderPrimitive.Track>
-    <SliderPrimitive.Thumb className="block h-[28px] w-[28px] rounded-full border border-light-gray bg-light-gray outline-none focus:bg-slate hover:bg-slate focus:border-lime hover:border-lime" />
+    <SliderPrimitive.Thumb
+      className="block h-[28px] w-[28px] rounded-full border border-light-gray bg-light-gray outline-none focus:bg-slate hover:bg-slate focus:border-lime hover:border-lime"
+      aria-label="Slider Track"
+    />
   </SliderPrimitive.Root>
 ));
 Slider.displayName = SliderPrimitive.Root.displayName;
