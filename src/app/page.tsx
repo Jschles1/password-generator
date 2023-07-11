@@ -141,7 +141,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-dark-gray p-4 md:pt-6 md:px-8 md:pb-8">
+        <div className="bg-dark-gray p-4 md:pt-8 md:px-8 md:pb-8">
           <div className="flex items-center justify-between mb-[1.125rem] md:mb-[1.688rem]">
             <p className="text-light-gray md:text-[1.125rem]">
               Character Length
