@@ -157,6 +157,7 @@ export default function Home() {
               min={8}
               max={20}
               step={1}
+              aria-label="Character Length"
             />
           </div>
 
