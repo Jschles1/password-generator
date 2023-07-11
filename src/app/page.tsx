@@ -164,7 +164,7 @@ export default function Home() {
             <div className="flex items-center mb-4 md:mb-[1.188rem]">
               <Checkbox
                 id="uppercase"
-                aria-labelledby="uppercase"
+                aria-label="uppercase"
                 name="uppercase"
                 onClick={handleCheckboxChange}
               />
@@ -179,6 +179,7 @@ export default function Home() {
             <div className="flex items-center mb-4 md:mb-[1.188rem]">
               <Checkbox
                 id="lowercase"
+                aria-label="lowercase"
                 name="lowercase"
                 onClick={handleCheckboxChange}
               />
@@ -193,7 +194,7 @@ export default function Home() {
             <div className="flex items-center mb-4 md:mb-[1.188rem]">
               <Checkbox
                 id="numbers"
-                aria-labelledby="numbers"
+                aria-label="numbers"
                 name="numbers"
                 onClick={handleCheckboxChange}
               />
@@ -208,7 +209,7 @@ export default function Home() {
             <div className="flex items-center">
               <Checkbox
                 id="symbols"
-                aria-labelledby="symbols"
+                aria-label="symbols"
                 name="symbols"
                 onClick={handleCheckboxChange}
               />
