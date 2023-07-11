@@ -162,7 +162,7 @@ export default function Home() {
           </div>
 
           <div className="mt-[2.625rem] mb-8">
-            <div className="flex items-center mb-4 md:mb-[1.188rem]">
+            <div className="flex items-center mb-4 md:mb-[1.25rem]">
               <Checkbox
                 id="uppercase"
                 aria-label="uppercase"
@@ -177,7 +177,7 @@ export default function Home() {
               </Label>
             </div>
 
-            <div className="flex items-center mb-4 md:mb-[1.188rem]">
+            <div className="flex items-center mb-4 md:mb-[1.25rem]">
               <Checkbox
                 id="lowercase"
                 aria-label="lowercase"
@@ -192,7 +192,7 @@ export default function Home() {
               </Label>
             </div>
 
-            <div className="flex items-center mb-4 md:mb-[1.188rem]">
+            <div className="flex items-center mb-4 md:mb-[1.25rem]">
               <Checkbox
                 id="numbers"
                 aria-label="numbers"
