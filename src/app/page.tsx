@@ -107,7 +107,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen mx-auto max-w-[1440px]">
-      <div className="py-16 px-4 md:px-[7.125rem] md:pt-[8.313rem] md:pb-[12.25rem]">
+      <div className="py-16 px-4 md:px-[7.125rem] md:pt-[8.313rem] md:pb-[12.25rem] lg:px-[28.125rem]">
         <h1 className="text-gray text-center mb-4 md:mb-[1.938rem] md:text-2xl">
           Password Generator
         </h1>
