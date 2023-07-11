@@ -2,10 +2,8 @@
 
 import * as React from "react";
 import * as z from "zod";
-import Image from "next/image";
 import { generate } from "generate-password";
 import { passwordStrength } from "check-password-strength";
-import CopyIcon from "public/assets/images/icon-copy.svg";
 import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
@@ -109,14 +107,16 @@ export default function Home() {
 
   return (
     <main className="min-h-screen mx-auto max-w-[1440px]">
-      <div className="py-16 px-4">
-        <h1 className="text-gray text-center mb-4">Password Generator</h1>
+      <div className="py-16 px-4 md:px-[7.125rem] md:pt-[8.313rem] md:pb-[12.25rem]">
+        <h1 className="text-gray text-center mb-4 md:mb-[1.938rem] md:text-2xl">
+          Password Generator
+        </h1>
 
-        <div className="flex p-4 items-center justify-between bg-dark-gray mb-4">
-          <div className="max-w-[60%]">
+        <div className="flex p-4 items-center justify-between bg-dark-gray mb-4 md:py-[1.188rem] md:px-8 md:mb-6">
+          <div className="max-w-[60%] md:max-w-[75%]">
             <p
               className={cn(
-                "text-gray text-2xl",
+                "text-gray text-2xl md:text-[2rem]",
                 !isPlaceholder &&
                   "text-light-gray text-ellipsis whitespace-nowrap overflow-hidden"
               )}
@@ -141,10 +141,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-dark-gray p-4">
-          <div className="flex items-center justify-between mb-[1.125rem]">
-            <p className="text-light-gray">Character Length</p>
-            <div className="text-2xl text-lime">{state.length}</div>
+        <div className="bg-dark-gray p-4 md:pt-6 md:px-8 md:pb-8">
+          <div className="flex items-center justify-between mb-[1.125rem] md:mb-[1.688rem]">
+            <p className="text-light-gray md:text-[1.125rem]">
+              Character Length
+            </p>
+            <div className="text-2xl text-lime md:text-[2rem]">
+              {state.length}
+            </div>
           </div>
 
           <div>
@@ -157,7 +161,7 @@ export default function Home() {
           </div>
 
           <div className="mt-[2.625rem] mb-8">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 md:mb-[1.188rem]">
               <Checkbox
                 id="uppercase"
                 name="uppercase"
@@ -165,13 +169,13 @@ export default function Home() {
               />
               <Label
                 htmlFor="uppercase"
-                className="ml-[1.25rem] text-light-gray"
+                className="ml-[1.25rem] text-light-gray md:text-[1.125rem] md:ml-6"
               >
                 Include Uppercase Letters
               </Label>
             </div>
 
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 md:mb-[1.188rem]">
               <Checkbox
                 id="lowercase"
                 name="lowercase"
@@ -179,19 +183,22 @@ export default function Home() {
               />
               <Label
                 htmlFor="lowercase"
-                className="ml-[1.25rem] text-light-gray"
+                className="ml-[1.25rem] text-light-gray md:text-[1.125rem] md:ml-6"
               >
                 Include Lowercase Letters
               </Label>
             </div>
 
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 md:mb-[1.188rem]">
               <Checkbox
                 id="numbers"
                 name="numbers"
                 onClick={handleCheckboxChange}
               />
-              <Label htmlFor="numbers" className="ml-[1.25rem] text-light-gray">
+              <Label
+                htmlFor="numbers"
+                className="ml-[1.25rem] text-light-gray md:text-[1.125rem] md:ml-6"
+              >
                 Include Numbers
               </Label>
             </div>
@@ -202,17 +209,20 @@ export default function Home() {
                 name="symbols"
                 onClick={handleCheckboxChange}
               />
-              <Label htmlFor="symbols" className="ml-[1.25rem] text-light-gray">
+              <Label
+                htmlFor="symbols"
+                className="ml-[1.25rem] text-light-gray md:text-[1.125rem] md:ml-6"
+              >
                 Include Symbols
               </Label>
             </div>
           </div>
 
-          <div className="flex items-center justify-between px-4 py-[0.875rem] uppercase bg-slate mb-4">
-            <p className="text-gray">Strength</p>
+          <div className="flex items-center justify-between px-4 py-[0.875rem] md:pl-8 md:pr-[1.313rem] md:pb-[1.313rem] md:pt-[1.438rem] uppercase bg-slate mb-4 md:mb-8">
+            <p className="text-gray md:text-[1.125rem]">Strength</p>
             <div className="flex items-center justify-between">
               {typeof state.strength === "number" && (
-                <p className="text-light-gray text-[1.125rem] mr-4">
+                <p className="text-light-gray text-[1.125rem] mr-4 md:text-2xl">
                   {PASSWORD_STRENGTHS[state.strength]}
                 </p>
               )}
